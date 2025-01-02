@@ -1,0 +1,27 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "package.json",
+      "use": "@vercel/static-build",
+      "config": {
+        "distDir": "dist"
+      }
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/"
+    }
+  ],
+  "env": {
+    "VITE_SOME_KEY": "@vite_some_key"
+  },
+  "ignoreCommand": "!{README.md,yarn.lock,package-lock.json}",
+  "git": {
+    "deploymentEnabled": {
+      "main": true
+    }
+  }
+}
