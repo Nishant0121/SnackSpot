@@ -165,5 +165,5 @@ export default app;
 
 const API_URL =
   process.env.NODE_ENV === "production"
-    ? "https://us-central1-snackspot-cd9c4.cloudfunctions.net/sendNotification"
+    ? "https://snackspot.onrender.com/sendNotification"
     : "http://localhost:3000/sendNotification";
