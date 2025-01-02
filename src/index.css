@@ -1,0 +1,68 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 220 100% 95%; /* Light blue background */
+    --foreground: 220 80% 20%; /* Dark blue foreground */
+    --card: 220 100% 95%; /* Light blue card background */
+    --card-foreground: 220 80% 20%; /* Dark blue text */
+    --popover: 220 100% 95%; /* Light blue popover background */
+    --popover-foreground: 220 80% 20%; /* Dark blue popover text */
+    --primary: 220 80% 40%; /* Vibrant blue */
+    --primary-foreground: 220 100% 98%; /* Very light blue */
+    --secondary: 220 60% 70%; /* Soft blue */
+    --secondary-foreground: 220 80% 20%; /* Dark blue */
+    --muted: 220 60% 70%; /* Soft blue */
+    --muted-foreground: 220 40% 40%; /* Muted blue */
+    --accent: 220 60% 70%; /* Soft blue */
+    --accent-foreground: 220 80% 20%; /* Dark blue */
+    --destructive: 0 84.2% 60.2%; /* Keep red for destructive actions */
+    --destructive-foreground: 210 40% 98%; /* Light foreground for destructive */
+    --border: 220 60% 85%; /* Light blue border */
+    --input: 220 60% 85%; /* Light blue input */
+    --ring: 220 80% 40%; /* Vibrant blue ring */
+    --chart-1: 220 76% 50%; /* Blue chart color 1 */
+    --chart-2: 220 58% 45%; /* Blue chart color 2 */
+    --chart-3: 220 37% 35%; /* Blue chart color 3 */
+    --chart-4: 220 74% 60%; /* Blue chart color 4 */
+    --chart-5: 220 87% 65%; /* Blue chart color 5 */
+    --radius: 0.5rem;
+  }
+  .dark {
+    --background: 220 80% 10%; /* Dark blue background */
+    --foreground: 220 100% 98%; /* Light blue foreground */
+    --card: 220 80% 10%; /* Dark blue card background */
+    --card-foreground: 220 100% 98%; /* Light blue card text */
+    --popover: 220 80% 10%; /* Dark blue popover background */
+    --popover-foreground: 220 100% 98%; /* Light blue popover text */
+    --primary: 220 100% 60%; /* Bright blue */
+    --primary-foreground: 220 100% 98%; /* Light blue */
+    --secondary: 220 40% 20%; /* Darker blue for secondary */
+    --secondary-foreground: 220 100% 98%; /* Light blue text */
+    --muted: 220 40% 20%; /* Muted blue */
+    --muted-foreground: 220 60% 70%; /* Softer blue text */
+    --accent: 220 40% 20%; /* Darker blue accent */
+    --accent-foreground: 220 100% 98%; /* Light blue accent text */
+    --destructive: 0 62.8% 30.6%; /* Keep red for destructive actions */
+    --destructive-foreground: 220 100% 98%; /* Light blue foreground for destructive */
+    --border: 220 40% 20%; /* Dark blue border */
+    --input: 220 40% 20%; /* Dark blue input */
+    --ring: 220 100% 60%; /* Bright blue ring */
+    --chart-1: 220 76% 50%; /* Blue chart color 1 */
+    --chart-2: 220 58% 45%; /* Blue chart color 2 */
+    --chart-3: 220 37% 35%; /* Blue chart color 3 */
+    --chart-4: 220 74% 60%; /* Blue chart color 4 */
+    --chart-5: 220 87% 65%; /* Blue chart color 5 */
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
