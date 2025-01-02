@@ -15,9 +15,6 @@
       "dest": "/"
     }
   ],
-  "env": {
-    "VITE_SOME_KEY": "@vite_some_key"
-  },
   "ignoreCommand": "!{README.md,yarn.lock,package-lock.json}",
   "git": {
     "deploymentEnabled": {
